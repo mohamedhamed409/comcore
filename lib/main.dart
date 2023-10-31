@@ -1,4 +1,5 @@
-import 'package:comcore/login_view.dart';
+import 'package:comcore/constants.dart';
+import 'package:comcore/views/register_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,10 +14,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'CoMCORE',
-      theme: ThemeData(
-        
-      ),debugShowCheckedModeBanner: false,
-      home: const LoginView(),
+      theme: ThemeData(primarySwatch: kPrimaryColor),
+      debugShowCheckedModeBanner: false,
+      home: const RegisterView(),
     );
   }
 }
